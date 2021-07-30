@@ -1,0 +1,32 @@
+body {
+	background-color: lightblue;
+}
+
+.header {
+	color: navy;
+	border: 15px solid green;
+	margin: 20px;
+	padding-top: 20px;
+}
+
+p {
+	text-align: center;
+}
+
+.body {
+	color: navy;
+	border: 15px solid red;
+	margin: 20px;
+	height: 450px;
+}
+
+.footer {
+	color: navy;
+	border: 15px solid darkmagenta;
+	margin: 20px;
+}
+
+h2,
+div {
+	text-align: center;
+}
