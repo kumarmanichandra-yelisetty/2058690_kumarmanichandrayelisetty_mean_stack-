@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	text-size-adjust: 30px;
+}
+
+a {
+	text-align: 20px;
+}
+
+.body {
+	text-align: center;
+	color: navy;
+	border: 15px solid red;
+	margin: 20px;
+	height: 450px;
+}
+
+.body_ft {
+	text-align: center;
+	color: navy;
+	border: 15px solid red;
+}
+
+#main {
+	text-align: center;
+	padding-left: 650px;
+	padding-top: 0%;
+}
