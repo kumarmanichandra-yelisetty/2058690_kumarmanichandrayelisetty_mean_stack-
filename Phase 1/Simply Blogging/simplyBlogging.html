@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Simply Blogging</title>
+    <script src="simplyBlogging.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+        <h1 class="text-black" style="text-align: center;">Simply Blogging</h1>
+        <br/>
+        
+        <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+            <a class="nav-item nav-link active" href="simplyBlogging.html">Home</a>
+            <a class="nav-item nav-link active" href="about.html">About Us</a>
+            <a class="nav-item nav-link active" href="contacts.html">Contacts</a>
+        </nav>
+        <br/>
+        <div class="container bg-dark text-white">
+            <br><br>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 justify-content-center"><label class="text-black" for="title">Title:</label></div>
+                <div class="col-8"><input type="text" id="title" class="form-control"/></div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 justify-content-center"><label class="text-black" for="articles">Articles:</label></div>
+                <div class="col-8"><textarea class="form-control" rows="5" id="articles"></textarea></div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 justify-content-center"><label class="text-black" for="image">Add Image:</label></div>
+                <div class="col-8"><input type="url" id="image" class="form-control"/></div>
+            </div>
+            <br/>
+            <div class="row" >
+                <div class="col"></div>
+                <div class="col-3 justify-content-center"><input type="submit" value="Add Blog" id="button" class="btn btn-secondary" onclick="addBlog()"/></div>
+                <div class="col-8"></div>
+            </div>
+            <br><br>
+        </div>
+        
+        <br><br>
+        
+        <div id="blogsid" class="container">
+            
+        <br><br>  
+    </div>
+
+    <br><br>
+    
+</body>
+</html>

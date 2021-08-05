@@ -1,0 +1,28 @@
+.bg-light {
+	text-align: center;
+	color: navy;
+	border: 15px solid red;
+}
+
+#button {
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #514869;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+#button:hover {
+	background-color: #1c19d4;
+}
+
+#button:active {
+	background-color: #1c19d4;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
