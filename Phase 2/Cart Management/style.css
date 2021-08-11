@@ -1,0 +1,24 @@
+.bg-light {
+	text-align: center;
+	color: navy;
+	border: 15px solid red;
+}
+
+#main {
+	text-align: center;
+	padding-left: 65px;
+	padding-top: 0%;
+}
+
+a {
+	font-size: 30px;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	color: blue;
+	font-size: 30px;
+}
