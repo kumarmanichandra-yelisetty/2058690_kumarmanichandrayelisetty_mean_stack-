@@ -1,0 +1,9 @@
+div.all {
+  align-items: center;
+  width: 1685px;
+  border: 15px solid rgb(26, 22, 22);
+  padding: 100px;
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+}
