@@ -1,0 +1,75 @@
+<h1>Task Tracker</h1>
+<br><br>
+<div class="split left" style="font-size: 20px; text-align: center;">
+  <div class="centered">
+    <h2 style="font-size: 45px; display: inline-block; text-align: left;">To-Do-Tasks</h2>
+    <br /> <br />
+    <form #taskRef="ngForm" (ngSubmit)="addTask(taskRef)" style="display: inline-block; text-align: center; ">
+      <mat-form-field>
+        <mat-label>ID: </mat-label>
+        <input matInput name="id" ngModel />
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label>Name: </mat-label>
+        <input matInput name="name" ngModel />
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label>Task: </mat-label>
+        <input matInput name="task" ngModel />
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label>Dead line: </mat-label>
+        <input matInput name="deadline" ngModel />
+      </mat-form-field>
+      <br /> <br />
+      <button mat-raised-button color="primary" style="margin-right: 10px;" type="submit">Add</button>
+      <button mat-raised-button color="warn" type="reset" (click)="removeMsg()">Reset</button>
+    </form>
+    <br /> <br />
+    {{msg}}
+  </div>
+</div>
+<br><br>
+<div class="split right" style="font-size: 20px;">
+  <div class="centered" *ngIf="!listSize">
+    <h2 style="font-size: 45px;">To-Do-List</h2>
+    <div>
+      <br><br>
+      <p>Empty To do list</p>
+    </div>
+  </div>
+  <div>
+    <div *ngIf="listSize" style="text-align: left;">
+      <br />
+      <h2 style="font-size: 45px; text-align: center;">To-Do List</h2>
+      <br />
+      <table mat-table [dataSource]="dataSource" style="width:90%; margin: auto;">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let tasks"> {{tasks.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let tasks"> {{tasks.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="task">
+          <th mat-header-cell *matHeaderCellDef> Task </th>
+          <td mat-cell *matCellDef="let tasks"> {{tasks.task}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="deadline">
+          <th mat-header-cell *matHeaderCellDef> Deadline </th>
+          <td mat-cell *matCellDef="let tasks"> {{tasks.deadline}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>
