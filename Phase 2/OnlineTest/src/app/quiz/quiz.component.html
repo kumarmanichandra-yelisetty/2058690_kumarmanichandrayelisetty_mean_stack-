@@ -1,0 +1,36 @@
+<div class="container" style="text-align: center;" *ngIf="started">
+  <h2 style="font-size: 45px; margin-top: 2%;">Kaun Banega Crorepati --> Phase 2 End Project</h2>
+  <br />
+  <div class="middle">
+    <form [formGroup]="myForm" (ngSubmit)="gradeTest()">
+      <div *ngFor="let q of allQuestions" style="padding: 3%; font-family: Arial; font-size: 16px;">
+        <div style="text-align: left;">
+          <p>{{q.id}}. {{q.question}}</p>
+          <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="a" />
+          <label> {{q.a}}</label>
+          <br>
+          <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="b" />
+          <label> {{q.b}}</label>
+          <br>
+          <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="c" />
+          <label> {{q.c}}</label>
+          <br>
+          <input type="radio" [ngClass]="ended ? 'disabled' : 'active'" formControlName={{q.id}} value="d" />
+          <label> {{q.d}}</label>
+          <br><br>
+          <label class='answers' *ngIf="graded" style="color: green;">Answer is: {{q.correct}}</label>
+        </div>
+      </div>
+      <button mat-raised-button color="primary" style="margin-right: 10px;" type="submit" *ngIf="!ended"
+        (click)="gradeTest()">Submit</button>
+    </form>
+    <br><br>
+    <div class="score" *ngIf="ended && passed" style="color: green;">
+      <p>Result {{finalScore}}/{{allQuestions.length}} --> {{status}}!</p>
+    </div>
+    <div class="score" *ngIf="ended && failed" style="color: red;">
+      <p>Result {{finalScore}}/{{allQuestions.length}} --> {{status}}!</p>
+    </div>
+    <br><br><br><br><br><br>
+  </div>
+</div>

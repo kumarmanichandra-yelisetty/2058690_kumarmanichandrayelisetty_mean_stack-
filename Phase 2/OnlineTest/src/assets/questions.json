@@ -1,0 +1,12 @@
+[
+  {"id":"1","question":"Which of these sounds would you associate with the heart?","a":"Tring Tring","b":"Tap Tap","c":"Click Click","d":"Dhak Dhak","correct":"d"},
+  {"id":"2","question":"Who is the 'Bharat Ka Veer Putra Aaccording to the title of a 2013 TV Series?","a":"Tipu Sultan","b":"Chandragupta Maurya","c":"Maharana Pratap","d":"Ashoka","correct":"c"},
+  {"id":"3","question":"In 2013, where did the natural calamity known as Himalayan tsunami occur?","a":"Uttrakhand","b":"Arunachal Pradesh","c":"Jammu and Kashmir","d":"Sikkim","correct":"a"},
+  {"id":"4","question":"Which film is this song from?","a":"Mere Dad Ki Maruti","b":"Chennai Express","c":"Ghanchakkar","d":"Race 2","correct":"b"},
+  {"id":"5","question":"In the Ramayana, Which demon impersonated Rama's voice, screaming, 'Lakshman! Help me'?","a":"Surpanakha","b":"Khara","c":"Maricha","d":"Dushana","correct":"c"},
+  {"id":"6","question":"Who is the only leader to be elected Prime Minister of Pakistan three times?","a":"Syed Yousaf Raza Gillani","b":"Benazir Bhutto","c":"Liaqat Ali Khan","d":"Nawaz Sharif","correct":"d"},
+  {"id":"7","question":"The black widow, which eats the male counterpart after mating, as a female species of which animal?","a":"Sloth","b":"Ant","c":"Spider","d":"Termite","correct":"c"},
+  {"id":"8","question":"Douglas Engelbert, who passed away in 2013, is credited as the inventor of which of these products?","a":"Mobile Phone","b":"Computer Mouse","c":"Bluetooth Mouse","d":"Digital camera","correct":"b"},
+  {"id":"9","question":"In 1850, the first experimental electric telegraph line in India was set up between Calcutta and which place?","a":"Diamond Harbour","b":"Darjeeling","c":"Murshidabad","d":"Dhaka","correct":"a"},
+  {"id":"10","question":"Which of these persons has not walked on the Moon?","a":"Charles Duke","b":"James A Lovell","c":"Alan Bean","d":"Pete Conrad","correct":"b"}
+]
