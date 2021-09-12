@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Delete Course</title>
+    <script>
+        function confirm() {
+            alert("Deletion command sent!");
+        }
+    </script>
+</head>
+<body class="container bg-light text-black">
+    <h2 style="font-size: 40px;">Delete Course</h2><br>
+    <form action="http://localhost:9090/deleteCourse">
+        <label>Course ID: </label>
+        <input type="text" name="cid" placeholder="Enter Unique Course ID"> <br/><br>
+        <input class="btn btn-primary" type="submit" value="Delete" onclick="confirm()">
+        <input class="btn btn-secondary" type="reset" value="Reset"> <br/> <br/>
+        <a href="/">Back</a>
+    </form>
+</body>
+</html>
